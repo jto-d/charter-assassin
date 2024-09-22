@@ -47,7 +47,7 @@ OAUTH_CLIENT_SECRET=<secret of oauth>
 JWT_SECRET=<randomly generated key for JWTs>
 JWT_REFRESH_SECRET=<randomly generated key for refresh JWTs>
 
-ACTIVE_GAME_ID=<ID of the active game>
+ACTIVE__ID=<ID of the active game>
 
 ALLOWED_ORIGINS=<comma separated list of origin addresses for CORS>
 

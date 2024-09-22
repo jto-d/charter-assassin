@@ -47,13 +47,13 @@ function Login() {
             Welcome to
           </Text>
           <Text
-            fontSize="12vw"
+            fontSize="10vw"
             bgGradient="linear(to-l, gray.300, yellow.400, pink.200)"
             bgClip="text"
             fontWeight="extrabold"
             mt="-6"
           >
-            TAJ ASSASSIN
+            CHARTER ASSASSIN
           </Text>
           <Text width="90%" maxWidth="500px" align="center" mt="6" mb="6">
             In the dimly lit hallways of a club shrouded in secrecy, a sinister

@@ -1,4 +1,4 @@
-<h1 align="left">TAJ ASSASSIN</h1>
+<h1 align="left">CHARTER ASSASSIN</h1>
 
 <p>
   <a href="https://github.com/scornz/taj-assassin/blob/main/LICENSE" target="_blank">
@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> A small web app (primarily built for mobile) that facilitates the operation of a classic game of "assassin". Used at University Cottage Club (UCC) at Princeton University in F'23.
+> An improved version of "Taj Assassin" originally created by Mike Scornavacca with upgraded UI and customization for Charter. Facilitates operations for the game of assassin for Princeton's Charter Club.
 
 <p align="center">
   <img src="https://s6.gifyu.com/images/S6IB9.gif" alt="Scrolling through leaderboard" width="30%"/>

@@ -86,7 +86,7 @@ function Header() {
         bgGradient="linear(to-l, gray.300, yellow.400, pink.200)"
         bgClip="text"
       >
-        TAJ ASSASSIN
+        CHARTER ASSASSIN
       </Text>
       <Button
         marginLeft="auto"

@@ -69,7 +69,7 @@ function Login() {
           <Text width="90%" maxWidth="500px" align="center" fontWeight="bold">
             Use your{" "}
             <Box display="inline" maxWidth="500px" fontWeight="extrabold">
-              princeton.edu
+              partner
             </Box>{" "}
             email in order to join the chaos soon to unfold.
           </Text>

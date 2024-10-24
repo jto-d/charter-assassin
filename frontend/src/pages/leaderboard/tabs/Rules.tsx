@@ -32,7 +32,7 @@ function Rules() {
         <Text fontWeight="normal" align="center">
           These rules are subject to slight changes, however changes will be
           announced{" "}
-          <a href="https://groupme.com/join_group/96794581/Myt3F2CO">
+          <a href="https://groupme.com/join_group/103844291/n67vZ1O7">
             <Text display="inline" color="blue.400">
               in the GroupMe
             </Text>
@@ -61,15 +61,15 @@ function Rules() {
               . You must include the full name of the person you have killed.
             </ListItem>
             <ListItem>
-              If the kill is deemed valid, it will be registered here and will
-              be displayed publically on the leaderboard.
+              Once both members of a team have been eliminated, it will be registered here
+              and will be displayed publicly on the leaderboard.
             </ListItem>
             <ListItem>
               After a kill is registered, the target of the killed will be
               reassigned to that of whom they were killed by.
             </ListItem>
             <ListItem>
-              Kills are only valid during rounds. That is, in between the end of
+              Kills are only valid during rounds (see info about rounds below). That is, in between the end of
               a round and the start of the next, kills will not count. Kills
               must be sent in the GroupMe prior to the round ending, or they
               will not count.
@@ -85,14 +85,14 @@ function Rules() {
           <UnorderedList fontWeight="normal">
             <ListItem>
               There are 3 rounds of auto-elimination (rounds 1, 2, and 3), where
-              players must have a certain number of kills to move on.
+              teams must have a certain number of kills to move on.
             </ListItem>
             <ListItem>
               If a player does not have the minimum number of kills upon that
               round ending, they will be automatically eliminated.
             </ListItem>
             <ListItem>
-              The kills do not have to be in the relevant round. A player must
+              The kills do not have to be in the relevant round. A team must
               meet the threshold in total kills, which includes those from
               previous rounds.
             </ListItem>
@@ -126,12 +126,10 @@ function Rules() {
               killed.
               <UnorderedList fontWeight="normal">
                 <ListItem>
-                  Cottage is safe inside the building and in the
-                  courtyard/backyard. The front yard of the building, prior to
-                  entering the doors, is NOT safe. No other eating clubs are
-                  safe (nor dining halls). The exception is during nights out,
-                  from 10pm-2am, the insides of other eating clubs are safe,
-                  however the street is not.
+                  The interior of any eating club, and all Charter property.
+                </ListItem>
+                <ListItem>
+                  Dining halls.
                 </ListItem>
                 <ListItem>
                   Practice and competition (during, and preparing for), but not
@@ -139,7 +137,7 @@ function Rules() {
                 </ListItem>
                 <ListItem>
                   Own bedrooms, but common rooms, dorm hallways, and other's
-                  bedrooms are fair game.
+                  bedrooms are fair game (Please use common sense).
                 </ListItem>
                 <ListItem>
                   Classrooms are safe ONLY during midterms/exams. More

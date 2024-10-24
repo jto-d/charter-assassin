@@ -168,7 +168,7 @@ function Rules() {
               safety, no safe words, and no safe zones.
             </ListItem>
             <ListItem>
-              At the end of 11/1, if there is still more than a single person
+              At the end of 11/26, if there is still more than a single person
               remaining, there will be a duel between the two remaining
               participants with the most kills.
             </ListItem>
@@ -183,39 +183,39 @@ function Rules() {
           <List fontWeight="normal">
             <ListItem>
               <ListIcon as={ViewIcon} color="green.500" />
-              INITIAL TARGETS ANNOUNCED: 9/29 9AM
+              INITIAL TARGETS ANNOUNCED: 10/28 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ROUND 1: 10/2 9AM
+              START of ROUND 1: 10/28 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 1: 10/8 11:59PM (1 total kill required)
+              END of ROUND 1: 11/6 11:59PM (1 total kill required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ROUND 2: 10/9 9AM
+              START of ROUND 2: 11/7 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 2: 10/13 11:59PM (2 total kills required)
+              END of ROUND 2: 11/15 11:59PM (2 total kills required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ROUND 3: 10/23 9AM
+              START of ROUND 3: 11/16 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 3: 10/29 11:59PM (3 total kills required)
+              END of ROUND 3: 11/23 11:59PM (3 total kills required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ANARCHY: 10/30 9AM
+              START of ANARCHY: 11/24 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of GAME: 11/1 11:59PM
+              END of GAME: 11/26 11:59PM
             </ListItem>
           </List>
         </ListItem>
@@ -224,11 +224,11 @@ function Rules() {
           <UnorderedList fontWeight="normal">
             <ListItem>
               Let me know if the website is bugging out or it breaks completely,
-              I'll fix it ASAP.
+              JOD will fix it ASAP.
             </ListItem>
             <ListItem>
               If there is a dispute, it will be ruled by majority vote of 1
-              (me).
+              (Senne).
             </ListItem>
           </UnorderedList>
         </ListItem>

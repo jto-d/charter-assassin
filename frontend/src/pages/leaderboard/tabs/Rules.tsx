@@ -53,7 +53,7 @@ function Rules() {
             <ListItem>
               The kill must be caught on video and uploaded to the GroupMe,
               linked{" "}
-              <a href="https://groupme.com/join_group/96794581/Myt3F2CO">
+              <a href="https://groupme.com/join_group/103844291/n67vZ1O7">
                 <Text display="inline" color="blue.400">
                   HERE
                 </Text>

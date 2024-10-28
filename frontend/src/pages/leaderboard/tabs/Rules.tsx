@@ -132,6 +132,9 @@ function Rules() {
                   Dining halls.
                 </ListItem>
                 <ListItem>
+                  Places of worship.
+                </ListItem>
+                <ListItem>
                   Practice and competition (during, and preparing for), but not
                   travelling to/from.
                 </ListItem>
@@ -228,7 +231,7 @@ function Rules() {
             </ListItem>
             <ListItem>
               If there is a dispute, it will be ruled by majority vote of 1
-              (Senne).
+              (Senne) or by groupme poll if applicable.
             </ListItem>
           </UnorderedList>
         </ListItem>

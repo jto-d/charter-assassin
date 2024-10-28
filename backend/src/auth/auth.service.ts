@@ -23,6 +23,9 @@ export class AuthService {
     const minutes = 30;
     const expires = new Date(Date.now() + minutes * 60000);
 
+    console.log("Current time:", new Date(Date.now()).toISOString());
+    console.log("Expires at:", expires.toISOString());
+
     const token = this.jwtService.sign(
       { sub: userId.toString() },
       { expiresIn: `${minutes}m` },

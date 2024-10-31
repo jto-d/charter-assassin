@@ -40,6 +40,7 @@ function Login() {
       alignItems="center"
       justifyContent="center"
       height="100%"
+      textAlign="center" // Add this line
     >
       {!loading ? (
         <Stack alignItems="center">
@@ -48,12 +49,12 @@ function Login() {
           </Text>
           <Text
             fontSize="10vw"
-            bgGradient="linear(to-l, gray.300, yellow.400, pink.200)"
+            bgGradient="linear(to-l, blue.300, blue.400, blue.200)"
             bgClip="text"
             fontWeight="extrabold"
             mt="-6"
           >
-            CHARTER ASSASSIN
+            WHITMAN WHIPEOUT
           </Text>
           <Text width="90%" maxWidth="500px" align="center" mt="6" mb="6">
             In the dimly lit hallways of a club shrouded in secrecy, a sinister
@@ -69,9 +70,9 @@ function Login() {
           <Text width="90%" maxWidth="500px" align="center" fontWeight="bold">
             Use your{" "}
             <Box display="inline" maxWidth="500px" fontWeight="extrabold">
-              partner
+              princeton.edu
             </Box>{" "}
-            email in order to join the chaos soon to unfold.
+            email in order to join the game.
           </Text>
           <Button
             onClick={async () => {

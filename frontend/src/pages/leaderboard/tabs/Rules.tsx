@@ -42,41 +42,41 @@ function Rules() {
       </Card>
       <UnorderedList maxWidth="500px">
         <ListItem fontWeight="bold">
-          Getting someone "out"
+          Getting someone “out”
           <UnorderedList fontWeight="normal">
             <ListItem>
               You must squirt them with water directly from a water gun. The
               mechanism of water delivery must be from a water gun. Other
-              delivery methods, such as a water bottle or a cup of beer, do not
+              delivery methods, such as a water bottle or a can of soda, do not
               count.
             </ListItem>
             <ListItem>
-              The kill must be caught on video and uploaded to the GroupMe,
+              The eliminations must be caught on video and uploaded to the GroupMe,
               linked{" "}
               <a href="https://groupme.com/join_group/103844291/n67vZ1O7">
                 <Text display="inline" color="blue.400">
                   HERE
                 </Text>
               </a>
-              . You must include the full name of the person you have killed.
+              . You must include the full name of the person you have eliminated.
             </ListItem>
             <ListItem>
               Once both members of a team have been eliminated, it will be registered here
               and will be displayed publicly on the leaderboard.
             </ListItem>
             <ListItem>
-              After a kill is registered, the target of the killed will be
-              reassigned to that of whom they were killed by.
+              After a eliminations is registered, the target of the eliminated will be
+              reassigned to that of whom they were eliminated by.
             </ListItem>
             <ListItem>
-              Kills are only valid during rounds (see info about rounds below). That is, in between the end of
-              a round and the start of the next, kills will not count. Kills
+              Eliminations are only valid during rounds (see info about rounds below). That is, in between the end of
+              a round and the start of the next, liminations will not count. Eliminations
               must be sent in the GroupMe prior to the round ending, or they
               will not count.
             </ListItem>
             <ListItem>
               There are no shields. Holding a book up to protect yourself and
-              "deflect" the water will still count as a kill.
+              “deflect” the water will still count as a eliminations.
             </ListItem>
           </UnorderedList>
         </ListItem>
@@ -85,15 +85,15 @@ function Rules() {
           <UnorderedList fontWeight="normal">
             <ListItem>
               There are 3 rounds of auto-elimination (rounds 1, 2, and 3), where
-              teams must have a certain number of kills to move on.
+              teams must have a certain number of eliminations to move on.
             </ListItem>
             <ListItem>
-              If a player does not have the minimum number of kills upon that
+              If a player does not have the minimum number of eliminations upon that
               round ending, they will be automatically eliminated.
             </ListItem>
             <ListItem>
-              The kills do not have to be in the relevant round. A team must
-              meet the threshold in total kills, which includes those from
+              The eliminations do not have to be in the relevant round. A team must
+              meet the threshold in total eliminations, which includes those from
               previous rounds.
             </ListItem>
           </UnorderedList>
@@ -123,11 +123,8 @@ function Rules() {
           <UnorderedList fontWeight="normal">
             <ListItem>
               This is the exhaustive list of places where a player cannot be
-              killed.
+              eliminated.
               <UnorderedList fontWeight="normal">
-                <ListItem>
-                  The interior of any eating club, and all Charter property.
-                </ListItem>
                 <ListItem>
                   Dining halls.
                 </ListItem>
@@ -137,6 +134,9 @@ function Rules() {
                 <ListItem>
                   Practice and competition (during, and preparing for), but not
                   travelling to/from.
+                </ListItem>
+                <ListItem>
+                  The interior of any eating club.
                 </ListItem>
                 <ListItem>
                   Own bedrooms, but common rooms, dorm hallways, and other's
@@ -150,8 +150,8 @@ function Rules() {
               </UnorderedList>
             </ListItem>
             <ListItem>
-              Being in a safe zone means that you are unable to kill or be
-              killed. That is, kills from a player inside a safe zone to a
+              Being in a safe zone means that you are unable to eliminate or be
+              eliminated. That is, eliminations from a player inside a safe zone to a
               player outside of a safe zone are not valid.
             </ListItem>
           </UnorderedList>
@@ -173,7 +173,7 @@ function Rules() {
             <ListItem>
               At the end of 11/26, if there is still more than a single person
               remaining, there will be a duel between the two remaining
-              participants with the most kills.
+              participants with the most eliminations.
             </ListItem>
             <ListItem>
               Under NO circumstances will there be multiple winners. There will
@@ -194,7 +194,7 @@ function Rules() {
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 1: 11/6 11:59PM (1 total kill required)
+              END of ROUND 1: 11/6 11:59PM (1 total eliminations required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
@@ -202,7 +202,7 @@ function Rules() {
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 2: 11/15 11:59PM (2 total kills required)
+              END of ROUND 2: 11/15 11:59PM (2 total eliminations required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
@@ -210,7 +210,7 @@ function Rules() {
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 3: 11/23 11:59PM (3 total kills required)
+              END of ROUND 3: 11/23 11:59PM (3 total eliminations required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
@@ -226,12 +226,10 @@ function Rules() {
           Additional
           <UnorderedList fontWeight="normal">
             <ListItem>
-              Let me know if the website is bugging out or it breaks completely,
-              JOD will fix it ASAP.
+              Let an RCA know if the website is breaking, Nathan will try to fix it ASAP.
             </ListItem>
             <ListItem>
-              If there is a dispute, it will be ruled by majority vote of 1
-              (Senne) or by groupme poll if applicable.
+              If there is a dispute, it will be ruled by majority vote of the RCAs or by GroupMe poll if applicable.
             </ListItem>
           </UnorderedList>
         </ListItem>

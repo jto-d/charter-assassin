@@ -68,7 +68,7 @@ function Header() {
     <Box
       width="100%"
       height="50px"
-      backgroundColor="red.900"
+      backgroundColor="blue.100"
       display="flex"
       flexDir="row"
       padding="16px"
@@ -83,10 +83,10 @@ function Header() {
     >
       <Text
         fontSize="2xl"
-        bgGradient="linear(to-l, gray.300, yellow.400, pink.200)"
+        bgGradient="linear(to-l, blue.500, blue.700, blue.400)"
         bgClip="text"
       >
-        CHARTER ASSASSIN
+        WHITMAN WIPEOUT
       </Text>
       <Button
         marginLeft="auto"

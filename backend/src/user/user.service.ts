@@ -50,11 +50,16 @@ export class UserService {
     googleUser: GoogleUser,
   ): Promise<UserDocument> {
     let user = await this.userModel.findOne({ email: googleUser.email });
+  
+    if (user == null && !googleUser.email.endsWith('@princeton.edu')) {
+      throw new Error('Only @princeton.edu emails are allowed');
+    }
+  
     if (user != null) {
       // Simply return the user if they already exist
       return user;
     }
-
+  
     user = new this.userModel();
     user.email = googleUser.email;
     user.firstName = googleUser.firstName;

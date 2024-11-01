@@ -57,17 +57,22 @@ export class AuthController {
     @Req() req: Request,
     @Res({ passthrough: true }) res: Response,
   ) {
-    const user = await this.userService.findOrCreateByGoogleUser(
-      req.user as GoogleUser,
-    );
-    const refreshToken = await this.refreshService.create(user.id);
-    res.cookie('refresh_token', refreshToken.token, {
-      sameSite: 'lax',
-      httpOnly: true,
-    });
-
-    res.redirect(
-      `${this.cfg.getOrThrow<string>('FRONTEND_HOST')}/#/app/register`,
-    );
+    try {
+      const user = await this.userService.findOrCreateByGoogleUser(
+        req.user as GoogleUser,
+      );
+      const refreshToken = await this.refreshService.create(user.id);
+      res.cookie('refresh_token', refreshToken.token, {
+        sameSite: 'lax',
+        httpOnly: true,
+      });
+  
+      res.redirect(
+        `${this.cfg.getOrThrow<string>('FRONTEND_HOST')}/#/app/register`,
+      );
+    } catch (error) {
+      // Redirect to the main page if there is an error
+      res.redirect(`${this.cfg.getOrThrow<string>('FRONTEND_HOST')}/#/`);
+    }
   }
 }

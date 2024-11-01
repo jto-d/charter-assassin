@@ -45,8 +45,8 @@ function Rules() {
           Getting someone “out”
           <UnorderedList fontWeight="normal">
             <ListItem>
-              You must squirt them with water directly from a water gun. The
-              mechanism of water delivery must be from a water gun. Other
+              You must squirt them with water directly from the whale squirter. The
+              mechanism of water delivery must be from the whale squirter. Other
               delivery methods, such as a water bottle or a can of soda, do not
               count.
             </ListItem>
@@ -102,16 +102,10 @@ function Rules() {
           Safeties
           <UnorderedList fontWeight="normal">
             <ListItem>
-              There will be a different “safety” every day. A “safety” is a
-              different task that must be continuously performed in order to
-              remain invulnerable.
+              At times, there might be certain days or events that will give you safety. Be on the lookout in the GroupMe for these announcements.
             </ListItem>
             <ListItem>
-              As the game progresses, safeties will continue to get more and
-              more difficult.
-            </ListItem>
-            <ListItem>
-              The day before the end of a round, there will be no daily safety.
+              The day before the end of a round, there will be no safeties.
               Safe zones (as listed below) are still valid during these days.
               This presents an opportunity for everyone to eliminate their
               target, regardless of who they are assigned.

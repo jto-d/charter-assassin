@@ -62,7 +62,7 @@ function Leaderboard() {
       <TabList>
         <Tab>Leaderboard</Tab>
         <Tab>All Targets</Tab>
-        <Tab>Safety</Tab>
+        {/* <Tab>Safety</Tab> */}
         <Tab>Rules</Tab>
       </TabList>
       <TabPanels>
@@ -72,11 +72,11 @@ function Leaderboard() {
         <TabPanel>
           <AllTargets />
         </TabPanel>
-        <TabPanel>
+        {/* <TabPanel>
           <Stack alignItems="center" width="100%">
             {gameInfo && <Safety gameInfo={gameInfo} />}
           </Stack>
-        </TabPanel>
+        </TabPanel> */}
         <TabPanel>
           <Stack alignItems="center" width="100%">
             <Rules />
@@ -88,11 +88,11 @@ function Leaderboard() {
 
   // List of all tabs for the player
   const playerTabs = (
-    <Tabs variant="soft-rounded" colorScheme="red">
+    <Tabs variant="soft-rounded" colorScheme="blue">
       <TabList>
         <Tab>Leaderboard</Tab>
         <Tab>Your Target</Tab>
-        <Tab>Safety</Tab>
+        {/* <Tab>Safety</Tab> */}
         <Tab>Rules</Tab>
       </TabList>
       <TabPanels>
@@ -104,11 +104,11 @@ function Leaderboard() {
             <TargetAssignment />
           </Stack>
         </TabPanel>
-        <TabPanel>
+        {/* <TabPanel>
           <Stack alignItems="center" width="100%">
             {gameInfo && <Safety gameInfo={gameInfo} />}
           </Stack>
-        </TabPanel>
+        </TabPanel> */}
         <TabPanel>
           <Stack alignItems="center" width="100%">
             <Rules />
@@ -169,7 +169,7 @@ function LeaderboardItem({
       width="70%"
       minWidth="400px"
       key={info.playerId}
-      sx={{ backgroundColor: info.alive ? "white" : "red.200" }}
+      sx={{ backgroundColor: info.alive ? "white" : "blue.200" }}
     >
       <HStack padding={4}>
         <Avatar name={info.name} />
@@ -179,12 +179,12 @@ function LeaderboardItem({
           </Text>
           <Box mt="-4">
             <Text as="span" fontWeight="bold">
-              Kills:
+              Eliminations:
             </Text>
             <Text as="span"> {info.kills}</Text>
           </Box>
           {!info.alive && (
-            <Text>Killed by {info.killedBy ?? "a magical force"}</Text>
+            <Text>Eliminated by {info.killedBy ?? "a magical force"}</Text>
           )}
         </Stack>
       </HStack>

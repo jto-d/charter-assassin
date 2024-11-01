@@ -52,7 +52,7 @@ function Register() {
             You're not registered yet. Click below to register for{" "}
             {gameInfo.name.toUpperCase()}.
           </Text>
-          <Text color="red.800" fontWeight="bold" align="center" width="400px">
+          <Text color="blue.800" fontWeight="bold" align="center" width="400px">
             By clicking the button below, you recognize you will be entered in a
             fearsome battle for victory, and that friendships may be broken,
             souls destroyed, and hopes crushed in the process. Proceed with

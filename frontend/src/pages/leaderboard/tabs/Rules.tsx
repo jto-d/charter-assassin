@@ -134,7 +134,7 @@ function Rules() {
                   sometimes sit and study at tables, nor does it include the Lauritzen basement common area.
                 </ListItem>
                 <ListItem>
-                  Own bedrooms, but common rooms, dorm hallways, and other's
+                  Own bedrooms, but common rooms and other's
                   bedrooms are fair game (Please use common sense).
                 </ListItem>
                 <ListItem>

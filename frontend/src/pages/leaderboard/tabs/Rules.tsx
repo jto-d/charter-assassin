@@ -45,8 +45,8 @@ function Rules() {
           Getting someone “out”
           <UnorderedList fontWeight="normal">
             <ListItem>
-              You must squirt them with water directly from a water gun. The
-              mechanism of water delivery must be from a water gun. Other
+              You must squirt them with water directly from the whale squirter. The
+              mechanism of water delivery must be from the whale squirter. Other
               delivery methods, such as a water bottle or a can of soda, do not
               count.
             </ListItem>

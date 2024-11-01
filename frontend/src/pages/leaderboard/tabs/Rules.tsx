@@ -102,9 +102,7 @@ function Rules() {
           Safeties
           <UnorderedList fontWeight="normal">
             <ListItem>
-              There will be a different “safety” every day. A “safety” is a
-              different task that must be continuously performed in order to
-              remain invulnerable.
+              At times, there might be certain days or events that will give you safety. Be on the lookout in the GroupMe for these announcements.
             </ListItem>
             <ListItem>
               As the game progresses, safeties will continue to get more and

@@ -1,4 +1,4 @@
-<h1 align="left">CHARTER ASSASSIN</h1>
+<h1 align="left">Whitman Wipeout</h1>
 
 <p>
   <a href="https://github.com/scornz/taj-assassin/blob/main/LICENSE" target="_blank">
@@ -12,13 +12,7 @@
   </a>
 </p>
 
-> An improved version of "Taj Assassin" originally created by Mike Scornavacca with upgraded UI and customization for Charter. Facilitates operations for the game of assassin for Princeton's Charter Club.
-
-<p align="center">
-  <img src="https://s6.gifyu.com/images/S6IB9.gif" alt="Scrolling through leaderboard" width="30%"/>
-  <img src="https://s6.gifyu.com/images/S8sSB.gif" alt="Scrolling through admin portal" width="30%"/>
-  <img src="https://s6.gifyu.com/images/S6mfG.gif" alt="Static view of safeties" width="30%"/>
-</p>
+> An improved version of "Taj Assassin" originally created by Mike Scornavacca with upgraded UI and customization for Whitman College. Will facilitate the game of Whitman Wipeout for academic year 2024–25.
 
 ## Requirements
 
@@ -47,7 +41,7 @@ OAUTH_CLIENT_SECRET=<secret of oauth>
 JWT_SECRET=<randomly generated key for JWTs>
 JWT_REFRESH_SECRET=<randomly generated key for refresh JWTs>
 
-ACTIVE__ID=<ID of the active game>
+ACTIVE_GAME_ID=<ID of the active game>
 
 ALLOWED_ORIGINS=<comma separated list of origin addresses for CORS>
 
@@ -56,7 +50,7 @@ FRONTEND_HOST=<address of the frontend, for redirections>
 ```
 
 7. Call `yarn start` from the `/backend` folder. If this opens, your backend is configured correctly.
-8. Ensure that the `BASE_URL` in `constants.tsx` points to `localhost`.
+8. Ensure that the `BASE_URL` in `constants.tsx` points to your API backend.
 9. Call `yarn start` from the `/frontend` folder in order to spin up the local React app.
 10. Prosper.
 

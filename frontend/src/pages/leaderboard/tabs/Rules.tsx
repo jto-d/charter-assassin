@@ -120,7 +120,7 @@ function Rules() {
               eliminated.
               <UnorderedList fontWeight="normal">
                 <ListItem>
-                  Dining halls.
+                  Only Whitman dining hall and the Pavillion are safe dining halls, no other dining halls are safe.
                 </ListItem>
                 <ListItem>
                   Places of worship.
@@ -130,17 +130,12 @@ function Rules() {
                   travelling to/from.
                 </ListItem>
                 <ListItem>
-                  The Whitman College hallways outside of dorms. This does not include those slightly larger common areas where people 
-                  sometimes sit and study at tables, nor does it include the Lauritzen basement common area.
-                </ListItem>
-                <ListItem>
                   Own bedrooms, but common rooms and other's
                   bedrooms are fair game (Please use common sense).
                 </ListItem>
                 <ListItem>
-                  Classrooms are safe ONLY during midterms/exams. More
-                  specifically, the classroom is safe while you are inside
-                  (including as you are prepping and finishing the exam).
+                  Classrooms are safe ONLY active registrar scheduled instruction or exams are going on. More
+                  specifically, the classroom is safe while you are inside during class, but not after class has ended.
                 </ListItem>
               </UnorderedList>
             </ListItem>

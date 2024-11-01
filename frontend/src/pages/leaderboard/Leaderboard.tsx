@@ -179,12 +179,12 @@ function LeaderboardItem({
           </Text>
           <Box mt="-4">
             <Text as="span" fontWeight="bold">
-              Kills:
+              Eliminations:
             </Text>
             <Text as="span"> {info.kills}</Text>
           </Box>
           {!info.alive && (
-            <Text>Killed by {info.killedBy ?? "a magical force"}</Text>
+            <Text>Eliminated by {info.killedBy ?? "a magical force"}</Text>
           )}
         </Stack>
       </HStack>

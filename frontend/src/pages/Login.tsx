@@ -54,7 +54,7 @@ function Login() {
             fontWeight="extrabold"
             mt="-6"
           >
-            WHITMAN WHIPEOUT
+            WHITMAN WIPEOUT
           </Text>
           <Text width="90%" maxWidth="500px" align="center" mt="6" mb="6">
             In the dimly lit hallways of a club shrouded in secrecy, a sinister

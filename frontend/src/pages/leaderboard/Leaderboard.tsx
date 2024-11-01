@@ -88,7 +88,7 @@ function Leaderboard() {
 
   // List of all tabs for the player
   const playerTabs = (
-    <Tabs variant="soft-rounded" colorScheme="red">
+    <Tabs variant="soft-rounded" colorScheme="blue">
       <TabList>
         <Tab>Leaderboard</Tab>
         <Tab>Your Target</Tab>
@@ -169,7 +169,7 @@ function LeaderboardItem({
       width="70%"
       minWidth="400px"
       key={info.playerId}
-      sx={{ backgroundColor: info.alive ? "white" : "red.200" }}
+      sx={{ backgroundColor: info.alive ? "white" : "blue.200" }}
     >
       <HStack padding={4}>
         <Avatar name={info.name} />

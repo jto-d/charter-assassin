@@ -51,7 +51,7 @@ function AllTargets() {
         width="90%"
         minWidth="400px"
         padding={4}
-        backgroundColor="red.100"
+        backgroundColor="blue.100"
         display="flex"
         alignItems="center"
       >

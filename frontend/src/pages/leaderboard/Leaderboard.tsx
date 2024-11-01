@@ -62,7 +62,7 @@ function Leaderboard() {
       <TabList>
         <Tab>Leaderboard</Tab>
         <Tab>All Targets</Tab>
-        <Tab>Safety</Tab>
+        {/* <Tab>Safety</Tab> */}
         <Tab>Rules</Tab>
       </TabList>
       <TabPanels>
@@ -72,11 +72,11 @@ function Leaderboard() {
         <TabPanel>
           <AllTargets />
         </TabPanel>
-        <TabPanel>
+        {/* <TabPanel>
           <Stack alignItems="center" width="100%">
             {gameInfo && <Safety gameInfo={gameInfo} />}
           </Stack>
-        </TabPanel>
+        </TabPanel> */}
         <TabPanel>
           <Stack alignItems="center" width="100%">
             <Rules />
@@ -92,7 +92,7 @@ function Leaderboard() {
       <TabList>
         <Tab>Leaderboard</Tab>
         <Tab>Your Target</Tab>
-        <Tab>Safety</Tab>
+        {/* <Tab>Safety</Tab> */}
         <Tab>Rules</Tab>
       </TabList>
       <TabPanels>
@@ -104,11 +104,11 @@ function Leaderboard() {
             <TargetAssignment />
           </Stack>
         </TabPanel>
-        <TabPanel>
+        {/* <TabPanel>
           <Stack alignItems="center" width="100%">
             {gameInfo && <Safety gameInfo={gameInfo} />}
           </Stack>
-        </TabPanel>
+        </TabPanel> */}
         <TabPanel>
           <Stack alignItems="center" width="100%">
             <Rules />

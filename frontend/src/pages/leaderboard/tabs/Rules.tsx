@@ -105,11 +105,7 @@ function Rules() {
               At times, there might be certain days or events that will give you safety. Be on the lookout in the GroupMe for these announcements.
             </ListItem>
             <ListItem>
-              As the game progresses, safeties will continue to get more and
-              more difficult.
-            </ListItem>
-            <ListItem>
-              The day before the end of a round, there will be no daily safety.
+              The day before the end of a round, there will be no safeties.
               Safe zones (as listed below) are still valid during these days.
               This presents an opportunity for everyone to eliminate their
               target, regardless of who they are assigned.

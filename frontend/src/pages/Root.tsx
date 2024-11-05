@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { Box, Button, Text } from "@chakra-ui/react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
@@ -20,7 +19,6 @@ function Root() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Only use this is the user ID is not null
     if (userId != null) {
       setLoading(false);
       return;
@@ -35,7 +33,6 @@ function Root() {
         navigate("/login");
       }
     };
-    // Otherwise, attempt to grab refresh tokens
     grab();
   }, [userId, navigate]);
 
@@ -70,9 +67,9 @@ function Header() {
       height="50px"
       backgroundColor="blue.100"
       display="flex"
-      flexDir="row"
-      padding="16px"
       alignItems="center"
+      justifyContent="space-between"
+      paddingX="16px"
       fontWeight="extrabold"
       position="fixed"
       top="0"
@@ -82,14 +79,17 @@ function Header() {
       zIndex={1}
     >
       <Text
-        fontSize="2xl"
-        bgGradient="linear(to-l, blue.500, blue.700, blue.400)"
+        fontSize={{ base: "xl", md: "2xl" }}
+        bgGradient="linear(to-l, blue.300, blue.400, blue.200)"
         bgClip="text"
+        fontFamily="Inter"
+        fontWeight="extrabold"
       >
         WHITMAN WIPEOUT
       </Text>
       <Button
-        marginLeft="auto"
+        colorScheme="blue"
+        size="sm"
         onClick={async () => {
           await logout();
           navigate("/login");

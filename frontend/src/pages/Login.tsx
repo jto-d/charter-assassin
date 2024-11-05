@@ -5,7 +5,7 @@ import { useRecoilValue } from "recoil";
 import { useNavigate } from "react-router-dom";
 import { requestTokens } from "../utils/auth";
 
-// Componenets
+// Components
 import { Box, Button, Spinner, Stack, Text } from "@chakra-ui/react";
 
 function Login() {
@@ -15,7 +15,6 @@ function Login() {
 
   // Attempt to auto login
   useEffect(() => {
-    // Only use this is the user ID is not null
     if (userId != null) {
       setLoading(false);
       return;
@@ -30,7 +29,6 @@ function Login() {
         setLoading(false);
       }
     };
-    // Otherwise, attempt to grab refresh tokens
     grab();
   }, [userId, navigate]);
 
@@ -39,47 +37,49 @@ function Login() {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      height="100%"
-      textAlign="center" // Add this line
+      height="100vh"
+      paddingX={{ base: "4", md: "8" }}
+      textAlign="center"
     >
       {!loading ? (
-        <Stack alignItems="center">
-          <Text width="90%" align="center">
+        <Stack alignItems="center" spacing={{ base: "4", md: "6" }} width="100%">
+          <Text
+            fontSize={{ base: "lg", md: "xl" }}
+            fontFamily="Instrument Sans"
+          >
             Welcome to
           </Text>
           <Text
-            fontSize="10vw"
+            fontSize={{ base: "12vw", md: "8vw", lg: "6vw" }}
             bgGradient="linear(to-l, blue.300, blue.400, blue.200)"
             bgClip="text"
             fontWeight="extrabold"
-            mt="-6"
+            fontFamily="Inter"
           >
             WHITMAN WIPEOUT
           </Text>
-          <Text width="90%" maxWidth="500px" align="center" mt="6" mb="6">
-            In the dimly lit hallways of a club shrouded in secrecy, a sinister
-            game of Whitman Wipeout unfolds. Each participant becomes a shadow, lurking
-            in the darkest corners, awaiting the perfect moment to strike. The
-            only rule: trust no one, for the line between friend and foe blurs
-            into a chilling uncertainty. As the clock ticks relentlessly,
-            tension tightens like a noose, and the relentless pursuit of power
-            and survival plunges them deeper into a web of treachery from which
-            there is no escape. In this merciless contest, the price of failure
-            is eternally ominous.
-          </Text>
-          <Text width="90%" maxWidth="500px" align="center" fontWeight="bold">
-            Use your{" "}
-            <Box display="inline" maxWidth="500px" fontWeight="extrabold">
+          <Text
+            fontSize={{ base: "sm", md: "md" }}
+            color="gray.600"
+            mt="6"
+            maxWidth="500px"
+            paddingX="4"
+          >
+            Login with your{" "}
+            <Box as="span" fontWeight="bold">
               princeton.edu
             </Box>{" "}
-            email in order to join the game.
+            Google account to begin
           </Text>
           <Button
+            colorScheme="blue"
+            size={{ base: "md", md: "lg" }}
+            paddingX={{ base: "6", md: "8" }}
             onClick={async () => {
               window.location.href = `${BASE_URL}/auth/google`;
             }}
           >
-            Login With Google
+            Login
           </Button>
         </Stack>
       ) : (

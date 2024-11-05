@@ -1,4 +1,4 @@
 /**
  * The base url of the target API
  */
-export const BASE_URL = "https://api.whitmanassassin.xyz";
+export const BASE_URL = "https://api.whitmanwipeout.com";

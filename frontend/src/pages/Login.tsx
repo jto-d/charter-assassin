@@ -58,7 +58,7 @@ function Login() {
           </Text>
           <Text width="90%" maxWidth="500px" align="center" mt="6" mb="6">
             In the dimly lit hallways of a club shrouded in secrecy, a sinister
-            game of assassin unfolds. Each participant becomes a shadow, lurking
+            game of Whitman Wipeout unfolds. Each participant becomes a shadow, lurking
             in the darkest corners, awaiting the perfect moment to strike. The
             only rule: trust no one, for the line between friend and foe blurs
             into a chilling uncertainty. As the clock ticks relentlessly,

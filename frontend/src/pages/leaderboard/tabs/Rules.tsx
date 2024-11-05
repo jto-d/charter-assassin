@@ -32,7 +32,7 @@ function Rules() {
         <Text fontWeight="normal" align="center">
           These rules are subject to slight changes, however changes will be
           announced{" "}
-          <a href="https://groupme.com/join_group/103844291/n67vZ1O7">
+          <a href="https://groupme.com/join_group/104324243/NucXzY0F">
             <Text display="inline" color="blue.400">
               in the GroupMe
             </Text>
@@ -53,7 +53,7 @@ function Rules() {
             <ListItem>
               The eliminations must be caught on video and uploaded to the GroupMe,
               linked{" "}
-              <a href="https://groupme.com/join_group/103844291/n67vZ1O7">
+              <a href="https://groupme.com/join_group/104324243/NucXzY0F">
                 <Text display="inline" color="blue.400">
                   HERE
                 </Text>
@@ -105,7 +105,7 @@ function Rules() {
               At times, there might be certain days or events that will give you safety. Be on the lookout in the GroupMe for these announcements.
             </ListItem>
             <ListItem>
-              The day before the end of a round, there will be no safeties.
+              There will be various days where no daily safety is given.
               Safe zones (as listed below) are still valid during these days.
               This presents an opportunity for everyone to eliminate their
               target, regardless of who they are assigned.
@@ -120,18 +120,18 @@ function Rules() {
               eliminated.
               <UnorderedList fontWeight="normal">
                 <ListItem>
-                  Only Whitman dining hall and the Pavillion are safe dining halls, no other dining halls are safe.
+                  Places of worship.
                 </ListItem>
                 <ListItem>
-                  Places of worship.
+                  Only Whitman dining hall and the Pavillion are safe dining halls, no other dining halls are safe.
                 </ListItem>
                 <ListItem>
                   Practice and competition (during, and preparing for), but not
                   travelling to/from.
                 </ListItem>
                 <ListItem>
-                  Own bedrooms, but common rooms and other's
-                  bedrooms are fair game (Please use common sense).
+                  Own bedrooms and common rooms are safe, however other's
+                  bedrooms and common rooms are fair game (Please use common sense).
                 </ListItem>
                 <ListItem>
                   Classrooms are safe ONLY active registrar scheduled instruction or exams are going on. More
@@ -150,8 +150,8 @@ function Rules() {
           Timeline
           <UnorderedList fontWeight="normal">
             <ListItem>
-              There will be a total of 4 rounds, summing up to 22 days of
-              in-game chaos (excluding breaks).
+              There will be a total of a TBD amount of rounds, summing up to 8 days of
+              in-game chaos.
             </ListItem>
             <ListItem>
               At the end of every round, all targets will be shuffled.
@@ -161,7 +161,7 @@ function Rules() {
               safety, no safe words, and no safe zones.
             </ListItem>
             <ListItem>
-              At the end of 11/26, if there is still more than a single person
+              At the end of 11/24, if there is still more than a single person
               remaining, there will be a duel between the two remaining
               participants with the most eliminations.
             </ListItem>
@@ -176,11 +176,11 @@ function Rules() {
           <List fontWeight="normal">
             <ListItem>
               <ListIcon as={ViewIcon} color="green.500" />
-              INITIAL TARGETS ANNOUNCED: 10/28 9AM
+              INITIAL TARGETS ANNOUNCED: 11/16 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ROUND 1: 10/28 9AM
+              START of ROUND 1: 11/16 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
@@ -188,27 +188,19 @@ function Rules() {
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ROUND 2: 11/7 9AM
+              START of ROUND 2: 11/19 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 2: 11/15 11:59PM (2 total eliminations required)
+              END of ROUND 2: 11/21 11:59PM (2 total eliminations required)
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="green.500" />
-              START of ROUND 3: 11/16 9AM
+              START of ANARCHY: 11/22 9AM
             </ListItem>
             <ListItem>
               <ListIcon as={TimeIcon} color="red.500" />
-              END of ROUND 3: 11/23 11:59PM (3 total eliminations required)
-            </ListItem>
-            <ListItem>
-              <ListIcon as={TimeIcon} color="green.500" />
-              START of ANARCHY: 11/24 9AM
-            </ListItem>
-            <ListItem>
-              <ListIcon as={TimeIcon} color="red.500" />
-              END of GAME: 11/26 11:59PM
+              END of GAME: 11/24 11:59PM
             </ListItem>
           </List>
         </ListItem>

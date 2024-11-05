@@ -38,16 +38,19 @@ function Login() {
       alignItems="center"
       justifyContent="center"
       height="100vh"
+      paddingX={{ base: "4", md: "8" }}
       textAlign="center"
-      padding="4"
     >
       {!loading ? (
-        <Stack alignItems="center" spacing="6">
-          <Text fontSize="lg" fontFamily="Instrument Sans">
+        <Stack alignItems="center" spacing={{ base: "4", md: "6" }} width="100%">
+          <Text
+            fontSize={{ base: "lg", md: "xl" }}
+            fontFamily="Instrument Sans"
+          >
             Welcome to
           </Text>
           <Text
-            fontSize="10vw"
+            fontSize={{ base: "12vw", md: "8vw", lg: "6vw" }}
             bgGradient="linear(to-l, blue.300, blue.400, blue.200)"
             bgClip="text"
             fontWeight="extrabold"
@@ -55,7 +58,13 @@ function Login() {
           >
             WHITMAN WIPEOUT
           </Text>
-          <Text fontSize="sm" color="gray.600" mt="6" maxWidth="500px">
+          <Text
+            fontSize={{ base: "sm", md: "md" }}
+            color="gray.600"
+            mt="6"
+            maxWidth="500px"
+            paddingX="4"
+          >
             Login with your{" "}
             <Box as="span" fontWeight="bold">
               princeton.edu
@@ -64,7 +73,8 @@ function Login() {
           </Text>
           <Button
             colorScheme="blue"
-            size="lg"
+            size={{ base: "md", md: "lg" }}
+            paddingX={{ base: "6", md: "8" }}
             onClick={async () => {
               window.location.href = `${BASE_URL}/auth/google`;
             }}

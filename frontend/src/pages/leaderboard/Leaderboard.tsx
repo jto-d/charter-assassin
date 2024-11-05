@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import {
   Avatar,
+  Badge,
   Box,
   Card,
   HStack,
@@ -170,7 +171,22 @@ function LeaderboardItem({
       minWidth="400px"
       key={info.playerId}
       sx={{ backgroundColor: info.alive ? "white" : "blue.200" }}
+      position="relative"
     >
+      {/* Safe marker badge */}
+      {info.safe && (
+        <Badge
+          colorScheme="green"
+          position="absolute"
+          top="2"
+          right="2"
+          borderRadius="full"
+          px="2"
+          fontSize="0.8em"
+        >
+          Safe
+        </Badge>
+      )}
       <HStack padding={4}>
         <Avatar name={info.name} />
         <Stack>

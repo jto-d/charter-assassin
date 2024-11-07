@@ -208,12 +208,13 @@ export class TargetService {
     // Make sure the player is alive, and if so, mark them as safe
     if (player.status !== PlayerStatus.ALIVE) {
       throw new PlayerStatusNotValidException(playerId, player.status);
-      player.status = PlayerStatus.SAFE;
-      player.save();
-    } else if (player.status === PlayerStatus.SAFE) {
-      player.status = PlayerStatus.ALIVE;
-      player.save();
     }
+
+    player.status =
+      player.status === PlayerStatus.ALIVE ? PlayerStatus.SAFE : PlayerStatus.ALIVE
+        ? PlayerStatus.ALIVE
+        : PlayerStatus.SAFE;
+    player.save();
   }
 
   async fetchTargets(userId: MongoId, gameId: MongoId) {

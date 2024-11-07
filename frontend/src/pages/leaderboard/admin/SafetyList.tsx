@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Card, HStack, Stack, Text } from "@chakra-ui/react";
 
 // API
-import { fetchLeaderboard } from "api/game/leaderboard";
+import { fetchLeaderboard } from "api/game/target";
 import { LeaderboardPlayerInfo } from "shared/api/game/player";
 
 // Components

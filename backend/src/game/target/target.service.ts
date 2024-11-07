@@ -205,8 +205,8 @@ export class TargetService {
 
     const player = await this.plyr.findById(playerId);
 
-    // Make sure the player is alive, and if so, mark them as safe
-    if (player.status !== PlayerStatus.ALIVE) {
+    // Make sure the player is alive
+    if (player.status !== PlayerStatus.ALIVE && player.status !== PlayerStatus.SAFE) {
       throw new PlayerStatusNotValidException(playerId, player.status);
     }
 

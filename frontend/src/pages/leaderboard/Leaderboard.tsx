@@ -170,7 +170,7 @@ function LeaderboardItem({
       width="70%"
       minWidth="400px"
       key={info.playerId}
-      sx={{ backgroundColor: info.alive ? "white" : "blue.200" }}
+      sx={{ backgroundColor: info.alive ? "white" : info.safe ? "blue.200" : "red.200" }}
     >
       <HStack padding={4} justifyContent="space-between">
         <HStack>
@@ -185,7 +185,7 @@ function LeaderboardItem({
               </Text>
               <Text as="span"> {info.kills}</Text>
             </Box>
-            {!info.alive && (
+            {(!info.alive || !info.safe) && (
               <Text>Eliminated by {info.killedBy ?? "a magical force"}</Text>
             )}
           </Stack>

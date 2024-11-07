@@ -52,7 +52,7 @@ export class TargetService {
       .find({
         gameId: gameId,
         playerId: playerId,
-        status: TargetStatus.PENDING,
+        status: { $in: [TargetStatus.PENDING, TargetStatus.SAFE] },
       })
       .exec();
     if (!query) {

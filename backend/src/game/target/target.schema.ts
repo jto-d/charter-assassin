@@ -25,6 +25,10 @@ export enum TargetStatus {
    * This target is no longer valid because the user was killed.
    * */
   USER_KILLED = 'USER_KILLED',
+  /**
+   * This target is safe for the day and cannot be killed.
+   * */
+  SAFE = 'SAFE',
 }
 
 @Schema()

@@ -171,41 +171,33 @@ function LeaderboardItem({
       minWidth="400px"
       key={info.playerId}
       sx={{ backgroundColor: info.alive ? "white" : "blue.200" }}
-      position="relative"
     >
-      {/* Safe marker badge */}
-      {info.safe && (
-        <Badge
-          colorScheme="green"
-          position="absolute"
-          top="2"
-          right="2"
-          borderRadius="full"
-          px="2"
-          fontSize="0.8em"
-        >
-          Safe
-        </Badge>
-      )}
-      <HStack padding={4}>
-        <Avatar name={info.name} />
-        <Stack>
-          <Text sx={info.alive ? {} : { textDecorationLine: "line-through" }}>
-            {ranking}: {info.name}
-          </Text>
-          <Box mt="-4">
-            <Text as="span" fontWeight="bold">
-              Eliminations:
+      <HStack padding={4} justifyContent="space-between">
+        <HStack>
+          <Avatar name={info.name} />
+          <Stack>
+            <Text sx={info.alive ? {} : { textDecorationLine: "line-through" }}>
+              {ranking}: {info.name}
             </Text>
-            <Text as="span"> {info.kills}</Text>
-          </Box>
-          {!info.alive && (
-            <Text>Eliminated by {info.killedBy ?? "a magical force"}</Text>
-          )}
-        </Stack>
+            <Box mt="-4">
+              <Text as="span" fontWeight="bold">
+                Eliminations:
+              </Text>
+              <Text as="span"> {info.kills}</Text>
+            </Box>
+            {!info.alive && (
+              <Text>Eliminated by {info.killedBy ?? "a magical force"}</Text>
+            )}
+          </Stack>
+        </HStack>
+        {info.safe && (
+          <Text color="green.500" fontWeight="bold">
+            SAFE
+          </Text>
+        )}
       </HStack>
     </Card>
-  );
+  );  
 }
 
 export default Leaderboard;

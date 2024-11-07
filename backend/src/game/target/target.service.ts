@@ -210,10 +210,7 @@ export class TargetService {
       throw new PlayerStatusNotValidException(playerId, player.status);
     }
 
-    player.status =
-      player.status === PlayerStatus.ALIVE ? PlayerStatus.SAFE : PlayerStatus.ALIVE
-        ? PlayerStatus.ALIVE
-        : PlayerStatus.SAFE;
+    player.status = player.status === PlayerStatus.ALIVE ? PlayerStatus.SAFE : PlayerStatus.ALIVE;
     player.save();
   }
 

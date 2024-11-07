@@ -185,7 +185,7 @@ function LeaderboardItem({
               </Text>
               <Text as="span"> {info.kills}</Text>
             </Box>
-            {(!info.alive || !info.safe) && (
+            {(!info.alive && !info.safe) && (
               <Text>Eliminated by {info.killedBy ?? "a magical force"}</Text>
             )}
           </Stack>

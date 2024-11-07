@@ -123,7 +123,7 @@ function PlayerItem({
           isDisabled={loading}
           ml="auto"
         >
-          Make Safe
+          {info.safe ? "Make Unsafe" : "Make Safe"}
         </MultiButton>
       </HStack>
     </Card>

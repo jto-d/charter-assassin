@@ -188,7 +188,7 @@ export class TargetService {
   }
 
   /**
-   * Mark the player status of someone as safe.
+   * Mark the player status of someone as safe, or make the unsafe if already marked safe.
    * @param gameId The game in question
    * @param userId The user of this function, in this case, an admin
    * @param playerId The player in the game
@@ -205,13 +205,15 @@ export class TargetService {
 
     const player = await this.plyr.findById(playerId);
 
-    // Make sure the player is alive
+    // Make sure the player is alive, and if so, mark them as safe
     if (player.status !== PlayerStatus.ALIVE) {
       throw new PlayerStatusNotValidException(playerId, player.status);
+      player.status = PlayerStatus.SAFE;
+      player.save();
+    } else if (player.status === PlayerStatus.SAFE) {
+      player.status = PlayerStatus.ALIVE;
+      player.save();
     }
-
-    player.status = PlayerStatus.SAFE;
-    player.save();
   }
 
   async fetchTargets(userId: MongoId, gameId: MongoId) {

@@ -31,7 +31,7 @@ import { EventCountdown } from "components/Countdown";
 import AllTargets from "./admin/AllTargets";
 import TargetAssignment from "./tabs/TargetAssignment";
 import Rules from "./tabs/Rules";
-import Safety from "./tabs/Safety";
+import SafetyList from "./tabs/admin/SafetyList";
 import { GameInfo } from "shared/api/game";
 
 /**
@@ -73,11 +73,10 @@ function Leaderboard() {
         <TabPanel>
           <AllTargets />
         </TabPanel>
-        {/* <TabPanel>
+          <TabPanel>
           <Stack alignItems="center" width="100%">
-            {gameInfo && <Safety gameInfo={gameInfo} />}
+            <SafetyList />
           </Stack>
-        </TabPanel> */}
         <TabPanel>
           <Stack alignItems="center" width="100%">
             <Rules />
@@ -176,7 +175,7 @@ function LeaderboardItem({
         <HStack>
           <Avatar name={info.name} />
           <Stack>
-            <Text sx={info.alive ? {} : { textDecorationLine: "line-through" }}>
+            <Text sx={info.alive || info.safe ? {} : { textDecorationLine: "line-through" }}>
               {ranking}: {info.name}
             </Text>
             <Box mt="-4">

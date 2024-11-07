@@ -115,9 +115,6 @@ function TargetItem({
     case "COMPLETE":
       color = "green.100";
       break;
-    case "SAFE":
-      color = "blue.100";
-      break;
     case "EXPIRED":
       color = "yellow.100";
       break;

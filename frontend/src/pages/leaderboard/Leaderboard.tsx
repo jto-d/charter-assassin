@@ -63,7 +63,7 @@ function Leaderboard() {
       <TabList>
         <Tab>Leaderboard</Tab>
         <Tab>All Targets</Tab>
-        {/* <Tab>Safety</Tab> */}
+        <Tab>Safety List</Tab>
         <Tab>Rules</Tab>
       </TabList>
       <TabPanels>

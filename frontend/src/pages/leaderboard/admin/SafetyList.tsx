@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Card, HStack, Stack, Text } from "@chakra-ui/react";
 
 // API
-import { fetchLeaderboard } from "api/game/target";
+import { fetchLeaderboard, makePlayerSafe } from "api/game/target";
 import { LeaderboardPlayerInfo } from "shared/api/game/player";
 
 // Components
@@ -114,9 +114,8 @@ function PlayerItem({
         </Stack>
         <MultiButton
           onActivate={async () => {
-            alert("test");
             setLoading(true);
-            // await makePlayerSafe(info.playerId);
+            await makePlayerSafe(info.playerId);
             await grabPlayers();
             setLoading(false);
           }}

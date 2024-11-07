@@ -52,7 +52,7 @@ export class TargetService {
       .find({
         gameId: gameId,
         playerId: playerId,
-        status: { $in: [TargetStatus.PENDING, TargetStatus.SAFE] },
+        status: TargetStatus.PENDING,
       })
       .exec();
     if (!query) {
@@ -185,6 +185,33 @@ export class TargetService {
     newTarget.playerId = playerId;
     newTarget.targetId = killedTarget.targetId;
     newTarget.save();
+  }
+
+  /**
+   * Mark the player status of someone as safe.
+   * @param gameId The game in question
+   * @param userId The user of this function, in this case, an admin
+   * @param playerId The player in the game
+   */
+  async makePlayerSafe(userId: MongoId, gameId: MongoId, playerId: MongoId) {
+    // Grab the game to make sure it exists
+    await this.gme.findById(gameId);
+
+    // Only allow admins to conduct this action
+    const role = await this.plyr.getRole(gameId, userId);
+    if (role !== PlayerRole.ADMIN) {
+      throw new PlayerRoleUnauthorizedException(userId, role);
+    }
+
+    const player = await this.plyr.findById(playerId);
+
+    // Make sure the player is alive
+    if (player.status !== PlayerStatus.ALIVE) {
+      throw new PlayerStatusNotValidException(playerId, player.status);
+    }
+
+    player.status = PlayerStatus.SAFE;
+    player.save();
   }
 
   async fetchTargets(userId: MongoId, gameId: MongoId) {

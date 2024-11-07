@@ -15,6 +15,11 @@ export enum PlayerStatus {
   KILLED = 'KILLED',
 
   /**
+   * This player has been marked safe and is no longer killable by during the day.
+   */
+  SAFE = 'SAFE',
+
+  /**
    * This player was manually disqualified for breaking the rules
    * */
   DISQUALIFIED = 'DISQUALIFIED',

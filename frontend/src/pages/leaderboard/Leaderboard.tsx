@@ -170,7 +170,7 @@ function LeaderboardItem({
       width="70%"
       minWidth="400px"
       key={info.playerId}
-      sx={{ backgroundColor: info.alive ? "white" : info.safe ? "blue.200" : "red.200" }}
+      sx={{ backgroundColor: info.alive ? "white" : info.safe ? "green.200" : "red.200" }}
     >
       <HStack padding={4} justifyContent="space-between">
         <HStack>
@@ -190,11 +190,19 @@ function LeaderboardItem({
             )}
           </Stack>
         </HStack>
-        {info.safe && (
-          <Text color="green.500" fontWeight="bold">
-            SAFE
-          </Text>
-        )}
+      {info.safe && (
+        <Badge
+          colorScheme="green"
+          position="absolute"
+          top="2"
+          right="2"
+          borderRadius="full"
+          px="2"
+          fontSize="0.8em"
+        >
+          Safe
+        </Badge>
+      )}
       </HStack>
     </Card>
   );  

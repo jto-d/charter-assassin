@@ -77,6 +77,7 @@ function Leaderboard() {
           <Stack alignItems="center" width="100%">
             <SafetyList />
           </Stack>
+          </TabPanel>
         <TabPanel>
           <Stack alignItems="center" width="100%">
             <Rules />

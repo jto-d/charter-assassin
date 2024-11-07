@@ -86,10 +86,12 @@ export class TargetService {
     const target = await this.findByGameAndPlayer(player.gameId, playerId);
     const targetPlayer = await this.plyr.findById(target.targetId);
     const targetUser = await this.usr.findById(targetPlayer.userId);
+
     return {
       name: `${targetUser.firstName} ${targetUser.surname}`,
+      safe: targetPlayer.status === PlayerStatus.SAFE
     };
-  }
+}
 
   /**
    * Create targets for all alive players in a game. Expire all pending targets,

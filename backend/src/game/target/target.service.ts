@@ -294,6 +294,7 @@ export class TargetService {
         name: `${user.firstName} ${user.surname}`,
         kills: killCounts[p.id] ?? 0,
         alive: p.status === PlayerStatus.ALIVE,
+        safe: p.status === PlayerStatus.SAFE,
         killedBy: killer ? `${killer.firstName} ${killer.surname}` : undefined,
       };
 

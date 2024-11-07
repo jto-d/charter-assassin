@@ -31,7 +31,7 @@ import { EventCountdown } from "components/Countdown";
 import AllTargets from "./admin/AllTargets";
 import TargetAssignment from "./tabs/TargetAssignment";
 import Rules from "./tabs/Rules";
-import SafetyList from "./tabs/admin/SafetyList";
+import SafetyList from "./admin/SafetyList";
 import { GameInfo } from "shared/api/game";
 
 /**
